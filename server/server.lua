@@ -29,7 +29,6 @@ end
 
 AddEventHandler("playerConnecting", function(playerName, setKickReason, deferrals)
     local playerIP = extractIP(source)
-    print(playerIP)
     if playerIP then
         checkIP(playerIP, deferrals)
     else
